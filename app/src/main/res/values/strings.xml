@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wild App</string>
+    <string name="title_home"></string>
+    <string name="title_dashboard"></string>
+    <string name="title_notifications"></string>
+    <string name="wild_coffee">Wild Coffee</string>
+</resources>
