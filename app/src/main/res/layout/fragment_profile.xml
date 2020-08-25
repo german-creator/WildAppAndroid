@@ -4,19 +4,206 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.profile.ProdileFragment">
+    android:background="@color/colorWhite"
+    tools:context=".activities.ProfileFragment">
 
-    <TextView
-        android:id="@+id/text_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/iv_wild"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:contentDescription="@string/wild_coffee"
+        android:src="@drawable/wild_coffee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_wild">
+
+        <TextView
+            android:id="@+id/tv_welcome_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mono_lite"
+            android:gravity="center"
+            android:text="Зарегестрируйтесь или ввойдите в свой аккаунт для отправки заказа"
+            android:textColor="@color/colorLead"
+            android:textSize="@dimen/small_font" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_welcome_description"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <android.widget.Button
+                android:id="@+id/bt_check_in"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/mono_lite"
+                android:gravity="center"
+                android:text="Регистрация"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_text_color"
+                android:textSize="@dimen/main_font" />
+
+            <android.widget.Button
+                android:id="@+id/bt_login"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/mono_lite"
+                android:gravity="center"
+                android:text="Войти"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_text_color"
+                android:textSize="@dimen/main_font" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_above="@id/view1"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/mono_regular"
+            android:hint="Имя"
+            android:gravity="bottom"
+            android:textColor="@color/colorLead"
+            android:textSize="@dimen/main_font"
+            android:visibility="visible" />
+
+        <android.widget.Button
+            android:id="@+id/bt_to_change_name"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:gravity="bottom"
+            android:layout_above="@id/view1"
+
+            />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_above="@id/tv_phone_number"
+            android:background="@color/colorPlatinum"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@id/view2"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/mono_regular"
+            android:hint="Телефон"
+            android:gravity="bottom"
+            android:textColor="@color/colorLead"
+            android:textSize="@dimen/main_font"
+            android:visibility="visible"
+            />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPlatinum" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_about_us"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="left"
+        android:text="О нас"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAzure"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl" />
+
+    <Button
+        android:id="@+id/bt_policy"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="left"
+        android:text="Политика Конфидициальности"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAzure"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintStart_toStartOf="@+id/bt_about_us"
+        app:layout_constraintTop_toBottomOf="@+id/bt_about_us" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="left"
+        android:text="Выйти"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAzure"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintStart_toStartOf="@+id/bt_policy"
+        app:layout_constraintTop_toBottomOf="@+id/bt_policy" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/mono_lite"
+        android:gravity="center"
+        android:text="Designed by Ivanilov German"
+        android:textColor="@color/colorPlatinum"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

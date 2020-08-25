@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "294569573932-pmpihqshifi9o0r73oqkvj66sfseq7bu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ivanilov.wildapp",
+            "certificate_hash": "38a7b941e07647767585edb081025d244f8ae1d1"
+          }
+        },
+        {
           "client_id": "294569573932-253mt5ck0hf6s498acpr2bl8d0qldrl8.apps.googleusercontent.com",
           "client_type": 3
         }

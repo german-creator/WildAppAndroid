@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="center"
+        android:text="Введите код"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/small_font"></TextView>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_code"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="center"
+        android:focusedByDefault="true"
+        android:hint="Код из смс"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/colorLead"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPlatinum"
+        />
+
+
+</LinearLayout>

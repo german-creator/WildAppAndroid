@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activities.ProfileFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_current_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorWhite"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/mono_regular"
+        android:hint="Текущее имя"
+        android:imeOptions="actionDone"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorLead"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorPlatinum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_current_name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_new_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/mono_regular"
+        android:hint="Новое имя"
+        android:imeOptions="actionDone"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorLead"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_current_name" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorPlatinum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_new_name" />
+
+
+    <android.widget.Button
+        android:id="@+id/bt_change_name"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/mono_lite"
+        android:gravity="center"
+        android:text="Изменить"
+        android:textAllCaps="false"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="104dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorWhite"
+        android:text="Error message"
+        android:textColor="@color/colorBrown"
+        android:textSize="@dimen/small_font"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

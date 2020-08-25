@@ -4,10 +4,13 @@
     <color name="colorPlatinum">#E0E3E4</color>
     <color name="colorAzure">#61E8E1</color>
     <color name="colorLightAzure">#8061E8E1</color>
+    <color name="colorButtonBackAzure">#5061E8E1</color>
+    <color name="colorSuperLightAzure">#2061E8E1</color>
     <color name="colorBrown">#896356</color>
     <color name="colorGrey">#B4B4B4</color>
     <color name="colorDarkGrey">#3B3B3B</color>
     <color name="colorLead">#212121</color>
     <color name="colorLightGrey">#f8f8f8</color>
+    <color name="colorRed">#EB4B3F</color>
 
 </resources>

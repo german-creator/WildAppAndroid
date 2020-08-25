@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activities.ProfileFragment">
+
+    <TextView
+        android:id="@+id/tv_explanation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        android:text="Введите свой номер для отправки кода подтверждения"
+        android:textColor="@color/colorLead"
+        android:gravity="center"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hipo.maskededittext.MaskedEditText
+        android:id="@+id/tv_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorWhite"
+        android:fontFamily="@font/mono_regular"
+        android:hint="Телефон"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explanation"
+        app:maskPattern="+7(###)###-##-##"
+        app:maskType="custom"
+        app:returnPattern="##########"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorPlatinum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+    <android.widget.Button
+        android:id="@+id/bt_login"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="center"
+        android:text="Получить код"
+        android:textAllCaps="false"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorWhite"
+        android:text="Error message"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/small_font"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_to_registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_to_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorWhite"
+        android:text="Если у вас еще нет акаунта.."
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_action_to_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:text="Зарегестрироваться"
+        android:textColor="@color/colorAzure"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to_registration" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:elevation="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

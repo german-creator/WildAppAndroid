@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_menu"
-        android:name="com.ivanilov.wildapp.ui.menu.MenuFragment"
+        android:name="com.ivanilov.wildapp.activities.MenuFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_menu" />
 
     <fragment
         android:id="@+id/navigation_order"
-        android:name="com.ivanilov.wildapp.ui.order.OrderFragment"
+        android:name="com.ivanilov.wildapp.activities.OrderFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_order" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.ivanilov.wildapp.ui.profile.ProdileFragment"
+        android:name="com.ivanilov.wildapp.activities.ProfileFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="center"
+        android:text="Name of product"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo" />
+
+    <TextView
+        android:id="@+id/tv_add_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mono_lite"
+        android:gravity="right"
+        android:text="Add 1"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_add_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mono_lite"
+        android:gravity="right"
+        android:text="Add 1"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_0" />
+
+    <TextView
+        android:id="@+id/tv_add_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mono_lite"
+        android:gravity="right"
+        android:text="Add 1"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_1" />
+
+    <TextView
+        android:id="@+id/tv_add_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mono_lite"
+        android:gravity="right"
+        android:text="Add 1"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/super_small_font"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_2" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="right"
+        android:text="2 шт"
+        android:textColor="@color/colorLead"
+        android:textSize="@dimen/small_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/mono_regular"
+        android:gravity="right"
+        android:text="100 Р"
+        android:textColor="@color/colorAzure"
+        android:textSize="@dimen/main_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorPlatinum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
